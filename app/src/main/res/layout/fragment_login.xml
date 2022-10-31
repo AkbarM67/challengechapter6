@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment.Fragment_login"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_gravity="center"
+        android:textSize="16pt"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/edituserName"
+        android:layout_width="260dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/editpassword"
+        android:layout_width="260dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Password" />
+
+    <Button
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="login"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnlogin"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:backgroundTint="@color/white"
+        android:text="Registrasi"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:id="@+id/btnRegistrasi"/>
+
+</LinearLayout>

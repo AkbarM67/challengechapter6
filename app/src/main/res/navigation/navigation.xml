@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragment_login">
+
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.example.challengechapter6.Fragment.Fragment_login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragment_login_to_fragment_registrasi"
+            app:destination="@id/fragment_registrasi" />
+        <action
+            android:id="@+id/action_fragment_login_to_fragment_Home"
+            app:destination="@id/fragment_Home" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_registrasi"
+        android:name="com.example.challengechapter6.Fragment.Fragment_registrasi"
+        android:label="fragment_registrasi"
+        tools:layout="@layout/fragment_registrasi" >
+        <action
+            android:id="@+id/action_fragment_registrasi_to_fragment_login"
+            app:destination="@id/fragment_login" />
+        <action
+            android:id="@+id/action_fragment_registrasi_to_fragment_login2"
+            app:destination="@id/fragment_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Home"
+        android:name="com.example.challengechapter6.Fragment.Fragment_Home"
+        android:label="fragment__home"
+        tools:layout="@layout/fragment__home" >
+        <action
+            android:id="@+id/action_fragment_Home_to_fragment_detail"
+            app:destination="@id/fragment_detail" />
+        <action
+            android:id="@+id/action_fragment_Home_to_fragment_login"
+            app:destination="@id/fragment_login" />
+        <action
+            android:id="@+id/action_fragment_Home_to_fragment_add"
+            app:destination="@id/fragment_add" />
+        <action
+            android:id="@+id/action_fragment_Home_to_fragment_Profil"
+            app:destination="@id/fragment_Profil" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_detail"
+        android:name="com.example.challengechapter6.Fragment_detail"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_fragment_detail_to_fragment_Home"
+            app:destination="@id/fragment_Home" />
+        <action
+            android:id="@+id/action_fragment_detail_to_fragment_update"
+            app:destination="@id/fragment_update" />
+        <action
+            android:id="@+id/action_fragment_detail_to_fragment_dialogDelete"
+            app:destination="@id/fragment_dialogDelete" />
+        <action
+            android:id="@+id/action_fragment_detail_to_fragment_Home2"
+            app:destination="@id/fragment_Home" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_add"
+        android:name="com.example.challengechapter6.Fragment_add"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_fragment_add_to_fragment_Home"
+            app:destination="@id/fragment_Home" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_update"
+        android:name="com.example.challengechapter6.Fragment_update"
+        android:label="fragment_update"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/action_fragment_update_to_fragment_Home"
+            app:destination="@id/fragment_Home" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_dialogDelete"
+        android:name="com.example.challengechapter6.Fragment_dialogDelete"
+        android:label="fragment_dialog_delete"
+        tools:layout="@layout/fragment_dialog_delete" >
+        <action
+            android:id="@+id/action_fragment_dialogDelete_to_fragment_Home"
+            app:destination="@id/fragment_Home" />
+        <action
+            android:id="@+id/action_fragment_dialogDelete_to_fragment_Home2"
+            app:destination="@id/fragment_Home" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Profil"
+        android:name="com.example.challengechapter6.Fragment_Profil"
+        android:label="fragment__profil"
+        tools:layout="@layout/fragment__profil" >
+        <action
+            android:id="@+id/action_fragment_Profil_to_fragment_Home"
+            app:destination="@id/fragment_Home" />
+    </fragment>
+</navigation>
